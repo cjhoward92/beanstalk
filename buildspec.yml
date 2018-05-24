@@ -3,8 +3,7 @@ phases:
   install:
     commands:
       - npm i
-      - zip -rq beanstalk.zip *
 artifacts:
-  type: zip
   files:
-    - beanstalk.zip
+    - "**/*"
+  base-directory: ./
